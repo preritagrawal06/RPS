@@ -1,5 +1,5 @@
-console.log('Welcome to Rock paper and scissor');
 
+//function to generate computer's choice
 function computerChoice() {
     let choice = Math.random();
     if (choice<0.33) {
@@ -13,27 +13,29 @@ function computerChoice() {
     }
 }
 
+//initialising score tally
 let score_user = 0;
 let score_computer = 0;
 
+//getting the user choice
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
 let scissor = document.getElementById('scissor');
 
+//result if user chooses rock
 rock.addEventListener('click',()=>{
     let result = document.getElementById('result');
     let choice = computerChoice();
     let userScore = document.getElementById('userScore');
     let computerScore = document.getElementById('computerScore');
-    console.log('you chose rock');
-    console.log(choice);
+    //updating DOM showing the result
     if (choice === 'rock') {
         result.innerHTML = 'Game Drawn';
     }
     else if (choice === 'scissor') {
         result.innerHTML = 'YOU WON';
         score_user++;
-        userScore.innerHTML=`YOUR SCORE: ${score_user}`;
+        userScore.innerHTML=`YOUR SCORE: ${score_user}`;            
     }
     else{
         result.innerHTML = 'YOU LOST';
@@ -42,13 +44,13 @@ rock.addEventListener('click',()=>{
     }
 
 })
+
+//result if user chooses paper
 paper.addEventListener('click',()=>{
     let result = document.getElementById('result');
     let choice = computerChoice();
     let userScore = document.getElementById('userScore');
     let computerScore = document.getElementById('computerScore');
-    console.log('you chose paper');
-    console.log(choice);
     if (choice === 'rock') {
         result.innerHTML = 'YOU WON';
         score_user++;
@@ -65,13 +67,12 @@ paper.addEventListener('click',()=>{
 
 })
 
+//result if user chooses scissor
 scissor.addEventListener('click',()=>{
     let result = document.getElementById('result');
     let choice = computerChoice();
     let userScore = document.getElementById('userScore');
     let computerScore = document.getElementById('computerScore');
-    console.log('you chose scissor');
-    console.log(choice);
     if (choice === 'rock') {
         result.innerHTML = 'YOU LOST';
         score_computer++;
