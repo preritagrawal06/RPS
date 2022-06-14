@@ -32,3 +32,100 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
 }
+
+@media screen and (max-width: 600px) {
+    .container img{
+        width: 80px;
+        height: 80px;
+        margin: 35px;
+        padding: 20px;
+    }
+    
+    .container img:hover{
+        width: 100px;
+        height: 100px;
+        background-color: lightgrey;
+        border-radius: 30%;
+        transition: background-color 300ms ease-in,width 300ms ease-in,height 300ms ease-in;
+        cursor: pointer;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .container img{
+        width: 60px;
+        height: 60px;
+        margin: 30px;
+        padding: 10px;
+    }
+    
+    .container img:hover{
+        width: 80px;
+        height: 80px;
+        background-color: lightgrey;
+        border-radius: 30%;
+        transition: background-color 300ms ease-in,width 300ms ease-in,height 300ms ease-in;
+        cursor: pointer;
+    }
+    
+}
+@media screen and (max-width: 390px) {
+    .container img{
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+        padding: 5px;
+    }
+    
+    .container img:hover{
+        width: 65px;
+        height: 65px;
+        background-color: lightgrey;
+        border-radius: 30%;
+        transition: background-color 300ms ease-in,width 300ms ease-in,height 300ms ease-in;
+        cursor: pointer;
+    }
+
+    .score{
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .score h1{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+    }
+    
+}
+@media screen and (max-width: 300px) {
+    .container img{
+        width: 35px;
+        height: 35px;
+        margin: 20px;
+        padding: 2px;
+    }
+    
+    .container img:hover{
+        width: 45px;
+        height: 45px;
+        background-color: lightgrey;
+        border-radius: 30%;
+        transition: background-color 300ms ease-in,width 300ms ease-in,height 300ms ease-in;
+        cursor: pointer;
+    }
+
+    .score{
+        text-align: center;
+        font-size: 7px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .score h1{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+    
+}
